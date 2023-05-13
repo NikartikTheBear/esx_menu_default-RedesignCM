@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.menu {
+  font-family: "Poppins", sans-serif;
+  min-width: 300px;
+  color: #fff;
+  position: absolute;
+  background: rgba(33, 33, 33, 0);
+  text-align: center;
+  -webkit-transform: perspective(0px) translateZ(0);
+  transform: perspective(0px) translateZ(0);
+  transform: perspective(900px) rotateY(20deg);
+}
+
+.head {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 3px;
+  text-align:center;
+  margin-bottom: 0.3px;
+  white-space: nowrap;
+  border-width: 30px;
+  border-color: red;
+  /*background: rgba(10, 10, 10, 0.9);*/
+  background-repeat: no-repeat;
+  background-image: url(https://cdn.discordapp.com/attachments/1006192601411633222/1106956552612622468/Senza_titolo-12.jpg);
+  background-position: 30%;
+  
+}
+
+.menu .head {
+  text-align: center;
+  text-shadow: red;
+  height: 80px;
+  color: #ffffff;
+  border-radius: 3px;
+  border: 0.5px solid rgba(250, 7, 7, 0.9);
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  
+}
+
+.menu .menu-items {
+  max-height: 450px;
+  overflow-y: auto;
+  font-weight: 550;
+  text-align: left;
+  
+}
+
+.menu-items {
+  margin-bottom: 2px;
+}
+
+.menu .menu-items .menu-item {
+  display: block;
+  padding: 7px;
+  font-size: 13px;
+  height: 16px;
+  text-indent: 5px;
+  margin-top: 0.2px;
+  background: rgba(240, 8, 8, 0.8);
+  color: rgb(202, 202, 202);
+  border: 0.1px solid rgba(249, 142, 142, 0.9);
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.menu .menu-items .menu-item.selected {
+  border: 2px solid rgba(244, 3, 3, 0.9);
+  background: rgba(242, 241, 241, 0.9);
+  color: rgb(248, 6, 6);
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  animation: pulse 750ms;
+}
+
+.menu.align-left {
+  left: 0;
+  top: 80%;
+}
+
+.menu.align-top-left {
+  left: 5rem;
+  top: 13%;
+}
+
+.menu.align-top {
+  left: 80%;
+  top: 0;
+}
+
+.menu.align-top-right {
+  right: 3rem;
+  top: 0;
+}
+
+.menu.align-right {
+  right: 0;
+  top: 50%;
+}
+
+.menu.align-bottom-right {
+  right: 3rem;
+  bottom: 0;
+}
+
+.menu.align-bottom {
+  left: 50%;
+  bottom: 0;
+  transform: translate(0, -50%);
+}
+
+.menu.align-bottom-left {
+  left: 3rem;
+  bottom: 0;
+}
+
+.menu.align-center {
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, 50%);
+}
+
+@keyframes pulse {
+  0% {transform: scale(1.0);} 20% {transform: scale(1.04);} 100% {transform: scale(1.0);}}
